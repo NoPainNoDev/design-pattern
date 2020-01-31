@@ -17,6 +17,7 @@ int main()
 	Monster* ghostPrototype = new Ghost(15, 3);
 	// 그것을 스포너에게 전달한다.
 	Spawner* ghostSpawner = new Spawner(ghostPrototype);
+	ghostSpawner->SpawnMonster();
 
 	// 이런 식으로도 가능하다.
 	// Spawner_Other* ghostPrototype_Other = new Spawner_Other(spawnGhost(15, 3));
