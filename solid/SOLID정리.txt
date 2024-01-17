@@ -1,5 +1,5 @@
 
-1. 단일 책임 원칙 (Simple Responsibility Principle)
+1. 단일 책임 원칙 (Simple Responsibility Principle, SRP)
 
 - 모든 클래스는 하나의 책임만 가져야 한다. 
 - 클래스는 책임에 대해서 완전히 캡슐화 해야 한다.
@@ -10,7 +10,7 @@ ex) 계산기(클래스)
     클래스를 수정하는 것은 사칙연산 책임에 대한 대응이지, 
     두가지 이상의 이유가 있으면 안된다.
 
-2.  개방 폐쇄 원칙 (Open Closed Principle)
+2.  개방 폐쇄 원칙 (Open Closed Principle, OCP)
 
 - 확장에는 열려있고, 수정에는 닫혀있다.
 - 클래스는 기능을 추가할 수 있다. (Open) 
@@ -23,7 +23,7 @@ ex) 캐릭터(상위클래스)
     A 캐릭터의 움직임을 재정의 한다. (Open)
 
 
-3. 리스코프 치환 원칙 (Liskov Substitution Principle)
+3. 리스코프 치환 원칙 (Liskov Substitution Principle, LSP)
 
 - 자식 클래스는 언제나 부모 클래스를 대체할 수 있다.
 - 부모 클래스 자리에 자식 클래스가 와도 잘 작동해야 한다.
@@ -38,7 +38,7 @@ ex) 동물(부모) - 새(자식)
     동물에 "울음" 함수를 새에서 다시 재작성 = 재정의
 
 
-4. 인터페이스 분리 원칙 (Interface Segregation Principle)
+4. 인터페이스 분리 원칙 (Interface Segregation Principle, ISP)
 
 - 사용하지 않는 인터페이스는 클래스로 구현하지 말아야 한다.
 - 하나의 일반적인 인터페이스보다 여러개의 구체적인 인터페이스가 낫다.
@@ -51,7 +51,7 @@ ex) 복합기(클래스)
     인쇄와 스캔에 대해 인터페이스를 따로 만들어줘야 한다.
 
 
-5. 의존 역전 원칙 (Dependency Inversion Principle)
+5. 의존 역전 원칙 (Dependency Inversion Principle, DIP)
 
 - 의존을 맺을 때에는 변화가 거의 없거나 변화가 어려운 것과 맺어야 한다.
 - 구체적인 클래스보다 인터페이스나 추상 클래스와 관계를 맺어야 한다.
